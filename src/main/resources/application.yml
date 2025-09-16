@@ -1,0 +1,21 @@
+server:
+  port: 8450
+
+spring:
+  application.name: java-webflux-order-service
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5435/java_webflux_order_service_db
+    username: postgres
+    password: qwerty
+
+logging:
+  level:
+    reactor.netty: INFO
+    reactor.core.publisher: DEBUG
+    org.springframework.r2dbc: DEBUG
+    org.springframework.data.r2dbc: DEBUG
+    org.springframework.transaction: DEBUG
+#    io.r2dbc.postgresql.QUERY: DEBUG
+#    io.r2dbc.postgresql.PARAM: DEBUG
+#    io.r2dbc.postgresql: DEBUG
+
