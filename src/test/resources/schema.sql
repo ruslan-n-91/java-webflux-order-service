@@ -1,5 +1,3 @@
-CREATE DATABASE java_webflux_order_service_db;
-
 DROP TABLE IF EXISTS orders CASCADE;
 
 CREATE SEQUENCE IF NOT EXISTS orders_id_seq START WITH 1 INCREMENT BY 1;

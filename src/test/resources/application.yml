@@ -1,0 +1,19 @@
+spring:
+  main:
+    lazy-initialization: true
+#  sql:
+#    init:
+#      mode: always
+#      schema-locations: classpath:schema.sql
+#  r2dbc:
+#    pool:
+#      max-size: 20 # Увеличьте размер пула для параллельных тестов
+#      initial-size: 5
+#      max-idle-time: 10s
+
+logging:
+  level:
+    com.example.javawebfluxorderservice: DEBUG
+    org.springframework.data.r2dbc: DEBUG
+    org.springframework.transaction: DEBUG
+    io.r2dbc.postgresql: DEBUG

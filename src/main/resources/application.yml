@@ -12,7 +12,7 @@ logging:
   level:
     reactor.netty: INFO
     reactor.core.publisher: DEBUG
-    org.springframework.r2dbc: DEBUG
+#    org.springframework.r2dbc: DEBUG
     org.springframework.data.r2dbc: DEBUG
     org.springframework.transaction: DEBUG
 #    io.r2dbc.postgresql.QUERY: DEBUG
