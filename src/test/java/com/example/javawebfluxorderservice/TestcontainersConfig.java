@@ -13,14 +13,14 @@ public class TestcontainersConfig {
     @ServiceConnection
     public PostgreSQLContainer<?> postgreSQLContainer() {
         return new PostgreSQLContainer<>("postgres:17-alpine")
-                .withDatabaseName("testdb")
-                .withUsername("test")
-                .withPassword("test")
+//                .withDatabaseName("testdb")
+//                .withUsername("test")
+//                .withPassword("test")
                 .withCopyFileToContainer(
                         MountableFile.forClasspathResource("schema.sql"),
                         "/docker-entrypoint-initdb.d/schema.sql"
-                )
-                .withReuse(true)
-                .withLabel("com.testcontainers.desktop.service", "postgres");
+                );
+//                .withReuse(true)
+//                .withLabel("com.testcontainers.desktop.service", "postgres");
     }
 }
